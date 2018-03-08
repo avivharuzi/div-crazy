@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Div Crazy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="ctr">
+            <div class="panel">
+                <button onclick="advanced()" class="btn-aqua">Advanced</button>
+                <button onclick="expert()" class="btn-green">Expert</button>
+                <button onclick="noob()" class="btn-red">Noob</button>
+                <span id="hits">Hits: 0</span>
+                <span id="miss">Miss: 0</span>               
+            </div>
+            <div id="moving" style="display:inline-block;"></div>
+        </div>
+        <div id="gameOver"></div>
+        <script src="js/app.js"></script>
+    </body>
+</html>
