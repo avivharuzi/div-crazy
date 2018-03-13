@@ -5,16 +5,18 @@ var main = document.getElementById("ctr");
 var js_div = document.getElementById("moving");
 var hits = document.getElementById("hits");
 var miss = document.getElementById("miss");
+var panel = document.getElementById("panel");
 var countHits = 0;
 var missHits = 0;
 var moveTimer;
 var para;
 
 function moveInterval() {
-    moveTimer = setInterval(function(){
+    moveTimer = setInterval(function () {
+        console.log(document.documentElement.clientWidth);
         js_div.style.display = "block";
-        js_div.style.left =  (Math.floor(Math.random() * document.documentElement.clientWidth) + 119) + "px";
-        js_div.style.top =  (Math.floor(Math.random() * document.documentElement.clientHeight) + 119) + "px";
+        js_div.style.left =  (Math.floor(Math.random() * document.documentElement.clientWidth)) + "px";
+        js_div.style.top =  (Math.floor(Math.random() * document.documentElement.clientHeight) + panel.clientHeight) + "px";
         js_div.style.backgroundColor = "#" + (Math.floor(Math.random() * 999999));
     }, 1000)
 }

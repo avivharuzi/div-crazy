@@ -98,3 +98,39 @@ button {
     transform: scale(1.2);
     opacity: 0.8;
 }
+
+@media only screen and (max-width: 768px) {
+    button {
+        padding: 7.5px 15px;
+        width: 100px;
+        border-radius: 2.5px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .panel > span {
+        font-size: 0.8rem;
+        padding: 7.5px 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    button {
+        padding: 7.5px;
+        width: 80%;
+        font-size: 0.6rem;
+        text-align: center;
+        display: block;
+        margin: auto auto;
+        margin-bottom: 10px;
+    }
+
+    .panel > span {
+        font-size: 0.6rem;
+        padding: 7.5px;
+        width: 80%;
+        display: block;
+        margin: auto auto;
+        margin-bottom: 10px;
+    }
+}
