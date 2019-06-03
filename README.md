@@ -1,2 +1,3 @@
-# div-crazy
-a small game to catch div with options
+# Div Crazy
+
+A small game to catch div with options.
